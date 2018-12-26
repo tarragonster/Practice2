@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th><label for="perimeter">Perimeter</label></th>
+        <th><span id="perimeter"></span></th>
+    </tr>
+
+    <tr>
+        <th><label for="area">Area</label></th>
+        <th><span id="area"></span></th>
+    </tr>
+
+</table>
+
+<script>
+    var r = parseInt(prompt("Please enter the radius of a circle"));
+
+    document.getElementById("perimeter").innerHTML = perimeter(r);
+    document.getElementById("area").innerHTML = area(r);
+
+    function perimeter(r) {
+
+        var c;
+        c = 2 * 3.14 * r;
+        
+        return c
+
+    }
+    
+    function area(r) {
+
+        var a;
+        a = 3.14 * r * r;
+
+        return a
+        
+    }
+
+</script>
+
+</body>
+</html>

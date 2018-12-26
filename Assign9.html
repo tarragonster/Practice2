@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Array</title>
+</head>
+<body>
+
+The array is <span id="theArray"></span><br>
+
+The input value is <span id="result"></span> and appears <span id="time"></span> time
+
+
+<script>
+
+    theArray = [];
+
+    theArray = prompt("Please enter the element of your array").split("");
+
+    var testValue = prompt("Please enter your input");
+
+    document.getElementById("result").innerHTML = testValue;
+    document.getElementById("theArray").innerHTML = theArray;
+    document.getElementById("time").innerText = appearTime(theArray,testValue);
+
+    function appearTime(a,b) {
+
+        var count = 0;
+
+        for (i =0;i<a.length;i++){
+
+            if(a[i] == b){
+
+                count ++
+            }
+        }
+        return count
+    }
+
+
+</script>
+
+</body>
+</html>

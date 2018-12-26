@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>factorial</title>
+</head>
+<body>
+<h2>Factorial</h2>
+
+<label for="testNum">The factorial of</label>
+<input type="text" id="testNum" oninput="theTest();"> is
+<span id="result"></span>
+
+<script>
+
+    function theTest(){
+
+        var testNum = document.getElementById("testNum").value;
+
+        document.getElementById("result").innerHTML = factorial(testNum)
+
+    }
+
+    function factorial(a) {
+
+        var b =1;
+
+        for(i = a;i > 0;i--){
+
+            b = b*i
+        }
+        return b
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

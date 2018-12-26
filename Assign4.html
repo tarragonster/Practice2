@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check variable's type</title>
+</head>
+<body>
+
+<label for="testType">The type of</label>
+<input type="text" id="testType" oninput="checkType();"> is
+<span id="result"></span>
+
+<script>
+    function checkType() {
+
+        var theVar = document.getElementById("testType").value;
+
+        if (isNaN(theVar)){
+
+            document.getElementById("result").innerHTML = "string"
+
+        }else{
+
+            document.getElementById("result").innerHTML = "number"
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>

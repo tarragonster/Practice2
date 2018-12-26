@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Array</title>
+</head>
+<body>
+<script>
+
+    nEle = parseInt(prompt("Please enter the number of element for your array"));
+
+    a =[];
+
+    for(i = 0; i <nEle;i++){
+        a[i] = parseInt(prompt("Please enter the elements"));
+    }
+    document.write(a + "<br>");
+    document.write(reverseArray(a));
+
+    function reverseArray(a) {
+
+        var lastNum = a.length-1;
+
+        for (firstNum =0; firstNum <= lastNum;firstNum++){
+
+            b = a[firstNum];
+
+            a[firstNum] = a[lastNum];
+
+            a[lastNum] = b;
+
+            lastNum--
+        }
+        return a
+
+    }
+
+</script>
+
+
+</body>
+</html>

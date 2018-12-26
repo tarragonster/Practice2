@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    The three numbers are <span id="display"></span><br>
+    The minimum number is <span id="theMin3"></span>
+</head>
+<body>
+<script>
+
+    a = [];
+
+    a = prompt("please enter 3 number").split(" ");
+
+    theMin3 = min2(a[0],a[1]);
+    theMin3 = min2(theMin3,a[2]);
+
+    document.getElementById("display").innerHTML = a;
+    document.getElementById("theMin3").innerHTML = theMin3;
+
+    function min2(a,b) {
+
+        if (a < b){
+
+            return a
+        }
+        return b
+    }
+
+
+</script>
+
+</body>
+</html>

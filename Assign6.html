@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The vowels</title>
+</head>
+<body>
+
+<script>
+
+    theInput = prompt("Please enter a letter!");
+
+    if (thevowels(theInput)){
+
+        alert("This is a vowel")
+    }else{
+
+        alert("This is not a consonant")
+    }
+
+
+function thevowels(a){
+
+    alphabet = [
+        ["a","e","i","o","u"],
+        ["A","E","I","O","U"]
+    ];
+
+    for (i =0; i< alphabet.length;i++) {
+        for (j = 0; j < 5; j++)
+            if (a == alphabet[i][j]){
+
+                return true
+            }
+    }
+    return false
+
+}
+
+
+</script>
+
+
+</body>
+</html>
